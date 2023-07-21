@@ -1,0 +1,23 @@
+{
+  "name": "percy",
+  "version": "1.0.0",
+  "description": "regression testing",
+  "main": "index.js",
+  "scripts": {
+    "test:percy": "testcafe chrome ./tests -r @percy/testcafe"
+  },
+  "keywords": [
+    "TestCafe",
+    "percy"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@percy/cli": "^1.26.2",
+    "@percy/testcafe": "^1.0.3",
+    "testcafe": "^3.0.1"
+  },
+  "devDependencies": {
+    "percy": "^5.0.0"
+  }
+}

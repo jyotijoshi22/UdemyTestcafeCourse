@@ -1,0 +1,17 @@
+{
+  "name": "testcafe-codecept",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "codeceptjs run --steps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^3.5.2",
+    "prettier": "^3.0.0",
+    "testcafe": "^3.0.1"
+  }
+}

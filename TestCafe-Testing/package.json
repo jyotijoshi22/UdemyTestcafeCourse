@@ -1,0 +1,32 @@
+{
+	"name": "testcafe-testing",
+	"version": "1.0.0",
+	"description": "Learning Automated testing with TestCafe",
+	"main": "index.js",
+	"scripts": {
+		"test:Edge": "testCafe Edge ./tests -s takeOnFails=true  --disable-page-caching --reporter json",
+		"test:Edge:5": "testCafe -c 5 Edge ./tests -s takeOnFails=true -s takeOnFails=true",
+		"test:Edge:headless:5": "testCafe -c 5 Edge:headless  ./tests",
+		"test:safari": "testCafe safari ./tests",
+		"test:firefox": "testCafe firefox ./tests",
+		"test:Edge:headless": "testCafe Edge:headless  ./tests",
+		"test:Edge:mobile": "testCafe Edge:emulation:device=iphone X  ./tests",
+		"test:multiple": "testCafe chrome,firefox,Edge ./tests -s takeOnFails=true"
+	},
+	"keywords": [
+		"TestCafe",
+		"Testing",
+		"Automation"
+	],
+	"author": "Jyoti Joshi",
+	"license": "ISC",
+	"dependencies": {
+		"prettier": "^3.0.0",
+		"testcafe": "^3.0.1",
+		"testcafe-reporter-json": "^2.2.0",
+		"testcafe-reporter-xunit": "^2.2.3"
+	},
+	"devDependencies": {
+		"xpath-to-css": "^1.1.0"
+	}
+}
